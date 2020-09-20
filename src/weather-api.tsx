@@ -4,7 +4,7 @@ const fetchWeather = async (): Promise<any> =>
     console.log(res);
     console.log(res.body);
     return new Promise((resolve) => {
-      window.setTimeout(() => resolve({ shalom: "sad" }), 1);
+      window.setTimeout(() => resolve(res.body), 1);
     });
   });
 
