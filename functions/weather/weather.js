@@ -1,3 +1,5 @@
+const fetch = require('node-fetch');
+
 exports.handler = async (event, _) => {
   try {
     const { LAT, LON, API_KEY } = process.env;
