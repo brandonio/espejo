@@ -1,13 +1,21 @@
-const fetch = require('node-fetch');
+const fetch = require("node-fetch");
 
-exports.handler = async (event, _) => {
+exports.handler = async (event, context, callback) => {
   try {
+    const pass = (body) => {
+      callback(null, { statusCode: 200, body: JSON.stringify(body) });
+    };
+
     const { LAT, LON, API_KEY } = process.env;
-    let response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?units=imperial&exclude=minutely&lat=${LAT}&lon=${LON}&appid=${API_KEY}`);
+    const url = `https://api.openweathermap.org/data/2.5/onecall?units=imperial&exclude=minutely&lat=${LAT}&lon=${LON}&appid=${API_KEY}`;
+    let response = await fetch(url);
     let data = await response.json();
-    console.log("shalom data: " + data);
-    return { statusCode: 200, body: JSON.stringify(data) };
+    pass(data);
   } catch (e) {
-    return { statusCode: 500, body: e.toString() }
+    let error = {
+      statusCode: err.statusCode || 500,
+      body: JSON.stringify({ error: err.message }),
+    };
+    await pass(error);
   }
-}
+};
