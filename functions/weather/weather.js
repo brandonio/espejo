@@ -11,7 +11,7 @@ exports.handler = async (event, _) => {
     const url = `https://api.openweathermap.org/data/2.5/onecall?units=imperial&exclude=minutely&lat=${LAT}&lon=${LON}&appid=${API_KEY}`;
     console.log(url);
     let response = await fetch(url);
-    let data = response.json();
+    let data = await response.json();
     return { statusCode: 200, body: JSON.stringify(data) };
   } catch (e) {
     return { statusCode: 500, body: e.toString() }
