@@ -6,13 +6,13 @@ import Feeds from "./Feeds";
 import { fetchWeather } from "../weather-api";
 
 const App: FC = () => {
-  const [json, setJson] = useState<JSON>();
+  const [json, setJson] = useState<string>();
 
   useEffect(() => {
     const interval = setInterval(() => {
       fetchWeather().then((json: JSON) => {
         console.log(json);
-        // setJson(json);
+        setJson(JSON.stringify(json));
         console.log("shalom?");
       });
     }, 5000);
