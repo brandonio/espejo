@@ -1,31 +1,36 @@
-import React, { FC, Fragment, useEffect, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 
-import Forecast from "./Forecast";
+// import SevenDayForecast from "./SevenDayForecast";
+// import HourlyForecast from "./HourlyForecast";
 import Weather from "./Weather";
 import Feeds from "./Feeds";
+// import Loading from "./Loading";
+
 import { fetchWeather } from "../weather-api";
 
 const App: FC = () => {
-  const [json, setJson] = useState<string>("default string");
+  const [data, setData] = useState<any>();
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      fetchWeather().then((res: any) => {
-        console.log(res);
-        console.log(JSON.stringify(res));
-        setJson(JSON.stringify(res));
-      });
-    }, 5000);
+    fetchWeather().then((res) => setData(res));
+    const interval = setInterval(
+      () => fetchWeather().then((res) => setData(res)),
+      180_000
+    );
     return () => clearInterval(interval);
   }, []);
 
-  return (
-    <Fragment>
-      <span>{json}</span>
-      <Forecast />
+  return data ? (
+    <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <span>{new Date(data[0].observation_time.value).toString()}</span>
+      {/* <SevenDayForecast forecasts={data.daily} /> */}
+      {/* <HourlyForecast forecasts={data.hourly} /> */}
       <Weather />
       <Feeds />
-    </Fragment>
+    </div>
+  ) : (
+    <span>Loading...</span>
+    // <Loading />
   );
 };
 
