@@ -1,8 +1,4 @@
 const fetchWeather = async (): Promise<any> =>
-  (
-    await fetch("/.netlify/functions/weather", {
-      headers: { "Access-Control-Allow-Origin": "*" },
-    })
-  ).json();
+  (await fetch("/.netlify/functions/weather")).json();
 
 export { fetchWeather };
