@@ -18,9 +18,7 @@ exports.handler = async () => {
   try {
     return {
       statusCode: 200,
-      headers: {
-        "Access-Control-Allow-Origin": process.env.CORS,
-      },
+      headers: { "Access-Control-Allow-Origin": "*" },
       body: JSON.stringify(
         await Promise.all(
           // URLS is a ☺-separated string of api URLs
