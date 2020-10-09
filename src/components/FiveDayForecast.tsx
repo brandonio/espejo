@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import OneDayForecast from "./OneDayForecast";
 
-const SevenDayForecast: FC<any> = ({ forecasts }) => (
+const FiveDayForecast: FC<any> = ({ forecasts }) => (
   <div
     style={{
       display: "flex",
@@ -16,4 +16,4 @@ const SevenDayForecast: FC<any> = ({ forecasts }) => (
   </div>
 );
 
-export default SevenDayForecast;
+export default FiveDayForecast;

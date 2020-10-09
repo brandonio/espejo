@@ -14,16 +14,18 @@ const fields = [
   ],
 ].map((lst) => lst.join("%2C"));
 
-exports.handler = async () => {
+exports.handler = async (event) => {
   try {
     return {
       statusCode: 200,
       body: JSON.stringify(
         await Promise.all(
           // URLS is a ☺-separated string of api URLs
-          process.env.URLS.split("☺").map(async (url, i) =>
-            (await fetch(url + fields.slice(i).join("%2C"))).json()
-          )
+          process.env.URLS.split("☺")
+            .slice(0, event.queryStringParameters.numReqs)
+            .map(async (url, i) =>
+              (await fetch(url + fields.slice(i).join("%2C"))).json()
+            )
         )
       ),
     };

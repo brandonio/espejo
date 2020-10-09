@@ -1,10 +1,8 @@
 import React, { FC, useEffect, useState } from "react";
 
-// import SevenDayForecast from "./SevenDayForecast";
+// import FiveDayForecast from "./FiveDayForecast";
 // import HourlyForecast from "./HourlyForecast";
-import Weather from "./Weather";
-import Feeds from "./Feeds";
-// import Loading from "./Loading";
+// import Weather from "./Weather";
 
 import { fetchWeather } from "../weather-api";
 
@@ -12,25 +10,34 @@ const App: FC = () => {
   const [data, setData] = useState<any>();
 
   useEffect(() => {
-    fetchWeather().then((res) => setData(res));
-    const interval = setInterval(
-      () => fetchWeather().then((res) => setData(res)),
-      180_000
-    );
+    fetchWeather(3).then((res) => setData(res));
+    const counts = [0, 0];
+    const targets = [3, 30];
+    const interval = setInterval(() => {
+      let numReqs = 1;
+      counts.map(
+        (_, i) =>
+          ++counts[i] === targets[i] && (numReqs += 1) && (counts[i] = 0)
+      );
+      fetchWeather(numReqs).then((res) =>
+        setData((data: any) => data.map((d: any, i: number) => res[i] || d))
+      );
+    }, 120_000);
     return () => clearInterval(interval);
   }, []);
-
-  return data ? (
-    <div style={{ display: "flex", justifyContent: "space-between" }}>
-      <span>{new Date(data[0].observation_time.value).toString()}</span>
-      {/* <SevenDayForecast forecasts={data.daily} /> */}
-      {/* <HourlyForecast forecasts={data.hourly} /> */}
-      <Weather />
-      <Feeds />
+  console.log(data, "data");
+  return (
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      {!data ? (
+        <span style={{ fontSize: 100, alignSelf: "center" }}>Loading...</span>
+      ) : data[0].message ? (
+        <span style={{ fontSize: 100, alignSelf: "center" }}>
+          {data[0].message}
+        </span>
+      ) : (
+        <span>{new Date(data[0].observation_time.value).toString()}</span>
+      )}
     </div>
-  ) : (
-    <span>Loading...</span>
-    // <Loading />
   );
 };
 

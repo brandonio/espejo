@@ -1,4 +1,2 @@
-const fetchWeather = async (): Promise<any> =>
-  (await fetch("/.netlify/functions/weather")).json();
-
-export { fetchWeather };
+export const fetchWeather = async (numReqs: number): Promise<any> =>
+  (await fetch(`/.netlify/functions/weather?numReqs=${numReqs}`)).json();
