@@ -9,7 +9,6 @@ const fields = [
     "precipitation",
     "sunrise",
     "sunset",
-    "temp",
     "weather_code",
   ],
 ].map((lst) => lst.join("%2C"));
@@ -20,8 +19,7 @@ exports.handler = async (event) => {
       statusCode: 200,
       body: JSON.stringify(
         await Promise.all(
-          // URLS is a ☺-separated string of api URLs
-          process.env.URLS.split("☺")
+          process.env.URLS.split("☺") // URLS is a ☺-separated string of api URLs
             .slice(0, event.queryStringParameters.numReqs)
             .map(async (url, i) =>
               (await fetch(url + fields.slice(i).join("%2C"))).json()

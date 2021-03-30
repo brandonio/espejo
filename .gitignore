@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# my notes
+/notes
+
 # dependencies
 /node_modules
 /.pnp
@@ -21,6 +24,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn.lock
 
 # Local Netlify folder
 .netlify
