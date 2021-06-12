@@ -1,34 +1,26 @@
 import React, { FC } from "react";
+import { extractValues } from "../utils";
 import { ColoredTemp } from "./ColoredTemp";
 import { WeatherIcon } from "./WeatherIcon";
-import { parseNumber, toTime } from "../utils";
 
 export const WeatherAndSun: FC<any> = ({ data }): any => {
-  const [sunrise, sunset] = [data.sunrise, data.sunset].map(toTime);
-  const temp = parseNumber(data.feels_like);
-  const [rain, humidity, aqi] = [
-    data.precipitation,
-    data.humidity,
-    data.epa_aqi,
-  ].map(parseNumber);
-  const [moon, weather, pollutant, aqiStatus] = [
-    data.moon_phase,
-    data.weather_code,
-    data.epa_primary_pollutant,
-    data.epa_health_concern,
-  ].map((t) => t.value);
-
-  console.log(rain, humidity, aqi, moon, weather, pollutant, aqiStatus);
-
+  const [
+    { hours: sunriseHours, minutes: sunriseMinutes },
+    { hours: sunsetHours, minutes: sunsetMinutes },
+  ] = [data.sunrise, data.sunset].map((time) => extractValues(time * 1_000));
   return (
     <div className="was-container">
       <div className="sas-container">
-        <span className="sun-time">⬆{sunrise}</span>
-        <span className="sun-time">⬇{sunset}</span>
+        <span className="sun-time">
+          ⬆{sunriseHours}:{sunriseMinutes}
+        </span>
+        <span className="sun-time">
+          {sunsetHours}:{sunsetMinutes}⬇
+        </span>
       </div>
       <div className="tai-container">
-        <ColoredTemp size={200} temp={temp} />
-        <WeatherIcon size={180} icon={data.weather_code.value} useNight />
+        <ColoredTemp size={180} temp={Math.round(data.feels_like)} />
+        <WeatherIcon size={180} icon={data.weather[0].icon} />
       </div>
     </div>
   );

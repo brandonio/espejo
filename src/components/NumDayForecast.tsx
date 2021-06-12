@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import { OneDayForecast } from "./OneDayForecast";
 
-export const NumDayForecast: FC<any> = ({ data, num }) => (
+export const NumDayForecast: FC<any> = ({ data, num, withCurrent }) => (
   <div className="ndf-container">
-    {data.slice(1, num + 1).map((f: any, i: number) => (
-      <OneDayForecast data={f} key={i} />
+    {data.slice(!withCurrent, num + !withCurrent).map((odf: any, i: number) => (
+      <OneDayForecast data={odf} key={i} />
     ))}
   </div>
 );

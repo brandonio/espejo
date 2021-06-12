@@ -1,7 +1,17 @@
-export const parseNumber = (d: any): number => Math.round(parseInt(d.value));
+export const extractValues = (time: number): any => {
+  const dateString = new Date(time).toString();
+  return {
+    day: dateString.slice(0, 3),
+    month: dateString.slice(4, 7),
+    date: dateString.slice(8, 10),
+    hours: getHours(time),
+    minutes: dateString.slice(19, 21),
+    seconds: dateString.slice(22, 24),
+  };
+};
 
-// come back to this
-export const toTime = (date: any): string => {
-  const time = new Date(date.value).toLocaleTimeString();
-  return time.substring(0, time.lastIndexOf(":"));
+export const getHours = (time: number): string => {
+  let hours = new Date(time).getHours();
+  hours = hours % 12 || 12;
+  return `${hours < 10 ? "0" : ""}${hours}`;
 };

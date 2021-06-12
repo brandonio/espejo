@@ -5,7 +5,7 @@ export const ColoredTemp: FC<any> = ({ temp, size }) => (
     className="colored-temp"
     style={{ color: colors[clamp(temp)], fontSize: size }}
   >
-    {temp}°
+    {temp}
   </span>
 );
 

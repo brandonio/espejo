@@ -1,32 +1,17 @@
 const fetch = require("node-fetch");
 
-const fields = [
-  ["moon_phase"],
-  ["epa_aqi", "epa_health_concern", "epa_primary_pollutant"],
-  [
-    "feels_like",
-    "humidity",
-    "precipitation",
-    "sunrise",
-    "sunset",
-    "weather_code",
-  ],
-].map((lst) => lst.join("%2C"));
+const prefix = "https://api.openweathermap.org/data/2.5";
+const apis = ["onecall", "air_pollution"];
 
-exports.handler = async (event) => {
+exports.handler = async () => {
   try {
-    return {
-      statusCode: 200,
-      body: JSON.stringify(
-        await Promise.all(
-          process.env.URLS.split("☺") // URLS is a ☺-separated string of api URLs
-            .slice(0, event.queryStringParameters.numReqs)
-            .map(async (url, i) =>
-              (await fetch(url + fields.slice(i).join("%2C"))).json()
-            )
-        )
-      ),
-    };
+    const { LAT, LON, KEY } = process.env;
+    const makeEndpoint = (api) =>
+      `${prefix}/${api}?units=imperial&lat=${LAT}&lon=${LON}&appid=${KEY}`;
+    const [weather, aqi] = await Promise.all(
+      apis.map(async (api) => (await fetch(makeEndpoint(api))).json())
+    );
+    return { statusCode: 200, body: JSON.stringify({ weather, aqi }) };
   } catch (e) {
     return { statusCode: 500, body: e.toString() };
   }

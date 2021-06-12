@@ -1,1831 +1,1717 @@
-const data = [
-  {
-    lat: 34.07,
-    lon: -118.44,
-    feels_like: {
-      value: 51.01,
-      units: "F",
+const data = {
+  weather: {
+    current: {
+      dt: 1623128725,
+      sunrise: 1623069735,
+      sunset: 1623121406,
+      temp: 60.89,
+      feels_like: 60.3,
+      pressure: 1011,
+      humidity: 77,
+      dew_point: 53.64,
+      uvi: 0,
+      clouds: 90,
+      visibility: 10000,
+      wind_speed: 1.01,
+      wind_deg: 291,
+      wind_gust: 1.99,
+      weather: [
+        {
+          id: 804,
+          main: "Clouds",
+          description: "overcast clouds",
+          icon: "04n",
+        },
+      ],
     },
-    humidity: {
-      value: 46.94,
-      units: "%",
-    },
-    precipitation: {
-      value: 0,
-      units: "in/hr",
-    },
-    sunrise: {
-      value: "2021-01-11T15:00:05.057Z",
-    },
-    sunset: {
-      value: "2021-01-12T01:04:21.208Z",
-    },
-    moon_phase: {
-      value: "new",
-    },
-    weather_code: {
-      value: "mostly_clear",
-    },
-    epa_aqi: {
-      value: 38,
-    },
-    epa_primary_pollutant: {
-      value: "pm25",
-    },
-    epa_health_concern: {
-      value: "Good",
-    },
-    observation_time: {
-      value: "2021-01-11T11:01:22.469Z",
-    },
+    minutely: [
+      {
+        dt: 1623128760,
+        precipitation: 0,
+      },
+      {
+        dt: 1623128820,
+        precipitation: 0,
+      },
+      {
+        dt: 1623128880,
+        precipitation: 0,
+      },
+      {
+        dt: 1623128940,
+        precipitation: 0,
+      },
+      {
+        dt: 1623129000,
+        precipitation: 0,
+      },
+      {
+        dt: 1623129060,
+        precipitation: 0,
+      },
+      {
+        dt: 1623129120,
+        precipitation: 0,
+      },
+      {
+        dt: 1623129180,
+        precipitation: 0,
+      },
+      {
+        dt: 1623129240,
+        precipitation: 0,
+      },
+      {
+        dt: 1623129300,
+        precipitation: 0,
+      },
+      {
+        dt: 1623129360,
+        precipitation: 0,
+      },
+      {
+        dt: 1623129420,
+        precipitation: 0,
+      },
+      {
+        dt: 1623129480,
+        precipitation: 0,
+      },
+      {
+        dt: 1623129540,
+        precipitation: 0,
+      },
+      {
+        dt: 1623129600,
+        precipitation: 0,
+      },
+      {
+        dt: 1623129660,
+        precipitation: 0,
+      },
+      {
+        dt: 1623129720,
+        precipitation: 0,
+      },
+      {
+        dt: 1623129780,
+        precipitation: 0,
+      },
+      {
+        dt: 1623129840,
+        precipitation: 0,
+      },
+      {
+        dt: 1623129900,
+        precipitation: 0,
+      },
+      {
+        dt: 1623129960,
+        precipitation: 0,
+      },
+      {
+        dt: 1623130020,
+        precipitation: 0,
+      },
+      {
+        dt: 1623130080,
+        precipitation: 0,
+      },
+      {
+        dt: 1623130140,
+        precipitation: 0,
+      },
+      {
+        dt: 1623130200,
+        precipitation: 0,
+      },
+      {
+        dt: 1623130260,
+        precipitation: 0,
+      },
+      {
+        dt: 1623130320,
+        precipitation: 0,
+      },
+      {
+        dt: 1623130380,
+        precipitation: 0,
+      },
+      {
+        dt: 1623130440,
+        precipitation: 0,
+      },
+      {
+        dt: 1623130500,
+        precipitation: 0,
+      },
+      {
+        dt: 1623130560,
+        precipitation: 0,
+      },
+      {
+        dt: 1623130620,
+        precipitation: 0,
+      },
+      {
+        dt: 1623130680,
+        precipitation: 0,
+      },
+      {
+        dt: 1623130740,
+        precipitation: 0,
+      },
+      {
+        dt: 1623130800,
+        precipitation: 0,
+      },
+      {
+        dt: 1623130860,
+        precipitation: 0,
+      },
+      {
+        dt: 1623130920,
+        precipitation: 0,
+      },
+      {
+        dt: 1623130980,
+        precipitation: 0,
+      },
+      {
+        dt: 1623131040,
+        precipitation: 0,
+      },
+      {
+        dt: 1623131100,
+        precipitation: 0,
+      },
+      {
+        dt: 1623131160,
+        precipitation: 0,
+      },
+      {
+        dt: 1623131220,
+        precipitation: 0,
+      },
+      {
+        dt: 1623131280,
+        precipitation: 0,
+      },
+      {
+        dt: 1623131340,
+        precipitation: 0,
+      },
+      {
+        dt: 1623131400,
+        precipitation: 0,
+      },
+      {
+        dt: 1623131460,
+        precipitation: 0,
+      },
+      {
+        dt: 1623131520,
+        precipitation: 0,
+      },
+      {
+        dt: 1623131580,
+        precipitation: 0,
+      },
+      {
+        dt: 1623131640,
+        precipitation: 0,
+      },
+      {
+        dt: 1623131700,
+        precipitation: 0,
+      },
+      {
+        dt: 1623131760,
+        precipitation: 0,
+      },
+      {
+        dt: 1623131820,
+        precipitation: 0,
+      },
+      {
+        dt: 1623131880,
+        precipitation: 0,
+      },
+      {
+        dt: 1623131940,
+        precipitation: 0,
+      },
+      {
+        dt: 1623132000,
+        precipitation: 0,
+      },
+      {
+        dt: 1623132060,
+        precipitation: 0,
+      },
+      {
+        dt: 1623132120,
+        precipitation: 0,
+      },
+      {
+        dt: 1623132180,
+        precipitation: 0,
+      },
+      {
+        dt: 1623132240,
+        precipitation: 0,
+      },
+      {
+        dt: 1623132300,
+        precipitation: 0,
+      },
+      {
+        dt: 1623132360,
+        precipitation: 0,
+      },
+    ],
+    hourly: [
+      {
+        dt: 1623128400,
+        temp: 60.89,
+        feels_like: 60.3,
+        pressure: 1011,
+        humidity: 77,
+        dew_point: 53.64,
+        uvi: 0,
+        clouds: 90,
+        visibility: 10000,
+        wind_speed: 4.45,
+        wind_deg: 182,
+        wind_gust: 4.92,
+        weather: [
+          {
+            id: 804,
+            main: "Clouds",
+            description: "overcast clouds",
+            icon: "04n",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623132000,
+        temp: 61,
+        feels_like: 60.31,
+        pressure: 1011,
+        humidity: 75,
+        dew_point: 53.02,
+        uvi: 0,
+        clouds: 75,
+        visibility: 10000,
+        wind_speed: 4.99,
+        wind_deg: 151,
+        wind_gust: 5.86,
+        weather: [
+          {
+            id: 803,
+            main: "Clouds",
+            description: "broken clouds",
+            icon: "04n",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623135600,
+        temp: 61.07,
+        feels_like: 60.31,
+        pressure: 1012,
+        humidity: 73,
+        dew_point: 52.36,
+        uvi: 0,
+        clouds: 64,
+        visibility: 10000,
+        wind_speed: 6.13,
+        wind_deg: 160,
+        wind_gust: 6.51,
+        weather: [
+          {
+            id: 803,
+            main: "Clouds",
+            description: "broken clouds",
+            icon: "04n",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623139200,
+        temp: 60.96,
+        feels_like: 60.1,
+        pressure: 1013,
+        humidity: 71,
+        dew_point: 51.51,
+        uvi: 0,
+        clouds: 55,
+        visibility: 10000,
+        wind_speed: 7.58,
+        wind_deg: 164,
+        wind_gust: 7.81,
+        weather: [
+          {
+            id: 803,
+            main: "Clouds",
+            description: "broken clouds",
+            icon: "04n",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623142800,
+        temp: 60.71,
+        feels_like: 59.72,
+        pressure: 1013,
+        humidity: 69,
+        dew_point: 50.49,
+        uvi: 0,
+        clouds: 52,
+        visibility: 10000,
+        wind_speed: 7.45,
+        wind_deg: 150,
+        wind_gust: 7.56,
+        weather: [
+          {
+            id: 803,
+            main: "Clouds",
+            description: "broken clouds",
+            icon: "04n",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623146400,
+        temp: 60.48,
+        feels_like: 59.41,
+        pressure: 1014,
+        humidity: 68,
+        dew_point: 49.26,
+        uvi: 0,
+        clouds: 44,
+        visibility: 10000,
+        wind_speed: 6.53,
+        wind_deg: 140,
+        wind_gust: 6.67,
+        weather: [
+          {
+            id: 802,
+            main: "Clouds",
+            description: "scattered clouds",
+            icon: "03n",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623150000,
+        temp: 60.44,
+        feels_like: 59.34,
+        pressure: 1014,
+        humidity: 67,
+        dew_point: 48.81,
+        uvi: 0,
+        clouds: 45,
+        visibility: 10000,
+        wind_speed: 5.37,
+        wind_deg: 125,
+        wind_gust: 5.82,
+        weather: [
+          {
+            id: 802,
+            main: "Clouds",
+            description: "scattered clouds",
+            icon: "03n",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623153600,
+        temp: 60.31,
+        feels_like: 59.14,
+        pressure: 1014,
+        humidity: 66,
+        dew_point: 48.33,
+        uvi: 0,
+        clouds: 46,
+        visibility: 10000,
+        wind_speed: 4.74,
+        wind_deg: 124,
+        wind_gust: 5.44,
+        weather: [
+          {
+            id: 802,
+            main: "Clouds",
+            description: "scattered clouds",
+            icon: "03n",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623157200,
+        temp: 60.39,
+        feels_like: 59.18,
+        pressure: 1014,
+        humidity: 65,
+        dew_point: 48.18,
+        uvi: 0,
+        clouds: 69,
+        visibility: 10000,
+        wind_speed: 4.29,
+        wind_deg: 131,
+        wind_gust: 4.59,
+        weather: [
+          {
+            id: 803,
+            main: "Clouds",
+            description: "broken clouds",
+            icon: "04d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623160800,
+        temp: 61.02,
+        feels_like: 59.83,
+        pressure: 1015,
+        humidity: 64,
+        dew_point: 48.2,
+        uvi: 0.38,
+        clouds: 62,
+        visibility: 10000,
+        wind_speed: 4.54,
+        wind_deg: 148,
+        wind_gust: 4.27,
+        weather: [
+          {
+            id: 803,
+            main: "Clouds",
+            description: "broken clouds",
+            icon: "04d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623164400,
+        temp: 62.15,
+        feels_like: 60.98,
+        pressure: 1016,
+        humidity: 62,
+        dew_point: 48.16,
+        uvi: 1.28,
+        clouds: 53,
+        visibility: 10000,
+        wind_speed: 4.47,
+        wind_deg: 150,
+        wind_gust: 3.53,
+        weather: [
+          {
+            id: 803,
+            main: "Clouds",
+            description: "broken clouds",
+            icon: "04d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623168000,
+        temp: 63.9,
+        feels_like: 62.76,
+        pressure: 1016,
+        humidity: 59,
+        dew_point: 48.6,
+        uvi: 3.39,
+        clouds: 43,
+        visibility: 10000,
+        wind_speed: 4.9,
+        wind_deg: 176,
+        wind_gust: 2.93,
+        weather: [
+          {
+            id: 802,
+            main: "Clouds",
+            description: "scattered clouds",
+            icon: "03d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623171600,
+        temp: 65.52,
+        feels_like: 64.45,
+        pressure: 1016,
+        humidity: 57,
+        dew_point: 49.24,
+        uvi: 5.9,
+        clouds: 36,
+        visibility: 10000,
+        wind_speed: 6.6,
+        wind_deg: 193,
+        wind_gust: 4.41,
+        weather: [
+          {
+            id: 802,
+            main: "Clouds",
+            description: "scattered clouds",
+            icon: "03d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623175200,
+        temp: 67.01,
+        feels_like: 66.09,
+        pressure: 1016,
+        humidity: 57,
+        dew_point: 50.2,
+        uvi: 8.42,
+        clouds: 30,
+        visibility: 10000,
+        wind_speed: 7.76,
+        wind_deg: 203,
+        wind_gust: 5.5,
+        weather: [
+          {
+            id: 802,
+            main: "Clouds",
+            description: "scattered clouds",
+            icon: "03d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623178800,
+        temp: 68.14,
+        feels_like: 67.33,
+        pressure: 1016,
+        humidity: 57,
+        dew_point: 50.86,
+        uvi: 10.25,
+        clouds: 18,
+        visibility: 10000,
+        wind_speed: 9.19,
+        wind_deg: 206,
+        wind_gust: 6.62,
+        weather: [
+          {
+            id: 801,
+            main: "Clouds",
+            description: "few clouds",
+            icon: "02d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623182400,
+        temp: 68.76,
+        feels_like: 68.02,
+        pressure: 1016,
+        humidity: 57,
+        dew_point: 51.42,
+        uvi: 10.83,
+        clouds: 18,
+        visibility: 10000,
+        wind_speed: 9.82,
+        wind_deg: 213,
+        wind_gust: 7.52,
+        weather: [
+          {
+            id: 801,
+            main: "Clouds",
+            description: "few clouds",
+            icon: "02d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623186000,
+        temp: 69.3,
+        feels_like: 68.56,
+        pressure: 1016,
+        humidity: 56,
+        dew_point: 51.57,
+        uvi: 9.97,
+        clouds: 13,
+        visibility: 10000,
+        wind_speed: 10.38,
+        wind_deg: 220,
+        wind_gust: 8.75,
+        weather: [
+          {
+            id: 801,
+            main: "Clouds",
+            description: "few clouds",
+            icon: "02d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623189600,
+        temp: 69.58,
+        feels_like: 68.88,
+        pressure: 1015,
+        humidity: 56,
+        dew_point: 51.69,
+        uvi: 8,
+        clouds: 11,
+        visibility: 10000,
+        wind_speed: 11.14,
+        wind_deg: 220,
+        wind_gust: 9.69,
+        weather: [
+          {
+            id: 801,
+            main: "Clouds",
+            description: "few clouds",
+            icon: "02d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623193200,
+        temp: 69.28,
+        feels_like: 68.54,
+        pressure: 1015,
+        humidity: 56,
+        dew_point: 51.53,
+        uvi: 5.41,
+        clouds: 9,
+        visibility: 10000,
+        wind_speed: 10.47,
+        wind_deg: 221,
+        wind_gust: 9.71,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623196800,
+        temp: 69.42,
+        feels_like: 68.59,
+        pressure: 1015,
+        humidity: 54,
+        dew_point: 50.7,
+        uvi: 2.97,
+        clouds: 8,
+        visibility: 10000,
+        wind_speed: 10.2,
+        wind_deg: 225,
+        wind_gust: 10.29,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623200400,
+        temp: 69.28,
+        feels_like: 68.31,
+        pressure: 1015,
+        humidity: 51,
+        dew_point: 49.33,
+        uvi: 1.23,
+        clouds: 2,
+        visibility: 10000,
+        wind_speed: 9.28,
+        wind_deg: 234,
+        wind_gust: 10.13,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623204000,
+        temp: 68.85,
+        feels_like: 67.69,
+        pressure: 1015,
+        humidity: 48,
+        dew_point: 47.59,
+        uvi: 0.33,
+        clouds: 2,
+        visibility: 10000,
+        wind_speed: 9.26,
+        wind_deg: 242,
+        wind_gust: 10.09,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623207600,
+        temp: 66.87,
+        feels_like: 65.61,
+        pressure: 1016,
+        humidity: 50,
+        dew_point: 46.49,
+        uvi: 0,
+        clouds: 1,
+        visibility: 10000,
+        wind_speed: 7.94,
+        wind_deg: 250,
+        wind_gust: 9.04,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623211200,
+        temp: 65.75,
+        feels_like: 64.38,
+        pressure: 1016,
+        humidity: 50,
+        dew_point: 45.66,
+        uvi: 0,
+        clouds: 19,
+        visibility: 10000,
+        wind_speed: 6.85,
+        wind_deg: 256,
+        wind_gust: 7.74,
+        weather: [
+          {
+            id: 801,
+            main: "Clouds",
+            description: "few clouds",
+            icon: "02n",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623214800,
+        temp: 65.01,
+        feels_like: 63.57,
+        pressure: 1017,
+        humidity: 50,
+        dew_point: 45.09,
+        uvi: 0,
+        clouds: 33,
+        visibility: 10000,
+        wind_speed: 5.64,
+        wind_deg: 252,
+        wind_gust: 6.42,
+        weather: [
+          {
+            id: 802,
+            main: "Clouds",
+            description: "scattered clouds",
+            icon: "03n",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623218400,
+        temp: 64,
+        feels_like: 62.55,
+        pressure: 1017,
+        humidity: 52,
+        dew_point: 45.05,
+        uvi: 0,
+        clouds: 35,
+        visibility: 10000,
+        wind_speed: 4.41,
+        wind_deg: 244,
+        wind_gust: 5.26,
+        weather: [
+          {
+            id: 802,
+            main: "Clouds",
+            description: "scattered clouds",
+            icon: "03n",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623222000,
+        temp: 63.54,
+        feels_like: 62.08,
+        pressure: 1017,
+        humidity: 53,
+        dew_point: 45.48,
+        uvi: 0,
+        clouds: 100,
+        visibility: 10000,
+        wind_speed: 2.35,
+        wind_deg: 227,
+        wind_gust: 3.8,
+        weather: [
+          {
+            id: 804,
+            main: "Clouds",
+            description: "overcast clouds",
+            icon: "04n",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623225600,
+        temp: 63.09,
+        feels_like: 61.68,
+        pressure: 1016,
+        humidity: 55,
+        dew_point: 46.02,
+        uvi: 0,
+        clouds: 88,
+        visibility: 10000,
+        wind_speed: 2.73,
+        wind_deg: 183,
+        wind_gust: 4.52,
+        weather: [
+          {
+            id: 804,
+            main: "Clouds",
+            description: "overcast clouds",
+            icon: "04n",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623229200,
+        temp: 62.33,
+        feels_like: 60.94,
+        pressure: 1016,
+        humidity: 57,
+        dew_point: 46.2,
+        uvi: 0,
+        clouds: 84,
+        visibility: 10000,
+        wind_speed: 2.57,
+        wind_deg: 200,
+        wind_gust: 3.74,
+        weather: [
+          {
+            id: 803,
+            main: "Clouds",
+            description: "broken clouds",
+            icon: "04n",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623232800,
+        temp: 61.83,
+        feels_like: 60.44,
+        pressure: 1016,
+        humidity: 58,
+        dew_point: 46.26,
+        uvi: 0,
+        clouds: 78,
+        visibility: 10000,
+        wind_speed: 1.66,
+        wind_deg: 161,
+        wind_gust: 3.58,
+        weather: [
+          {
+            id: 803,
+            main: "Clouds",
+            description: "broken clouds",
+            icon: "04n",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623236400,
+        temp: 61.68,
+        feels_like: 60.28,
+        pressure: 1016,
+        humidity: 58,
+        dew_point: 46.27,
+        uvi: 0,
+        clouds: 81,
+        visibility: 10000,
+        wind_speed: 2.08,
+        wind_deg: 182,
+        wind_gust: 3.09,
+        weather: [
+          {
+            id: 803,
+            main: "Clouds",
+            description: "broken clouds",
+            icon: "04n",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623240000,
+        temp: 61.48,
+        feels_like: 60.1,
+        pressure: 1016,
+        humidity: 59,
+        dew_point: 46.35,
+        uvi: 0,
+        clouds: 82,
+        visibility: 10000,
+        wind_speed: 2.26,
+        wind_deg: 204,
+        wind_gust: 2.82,
+        weather: [
+          {
+            id: 803,
+            main: "Clouds",
+            description: "broken clouds",
+            icon: "04n",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623243600,
+        temp: 61.41,
+        feels_like: 60.03,
+        pressure: 1017,
+        humidity: 59,
+        dew_point: 46.56,
+        uvi: 0,
+        clouds: 100,
+        visibility: 10000,
+        wind_speed: 1.66,
+        wind_deg: 244,
+        wind_gust: 1.97,
+        weather: [
+          {
+            id: 804,
+            main: "Clouds",
+            description: "overcast clouds",
+            icon: "04d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623247200,
+        temp: 62.53,
+        feels_like: 61.16,
+        pressure: 1017,
+        humidity: 57,
+        dew_point: 46.6,
+        uvi: 0.43,
+        clouds: 100,
+        visibility: 10000,
+        wind_speed: 1.7,
+        wind_deg: 186,
+        wind_gust: 2.37,
+        weather: [
+          {
+            id: 804,
+            main: "Clouds",
+            description: "overcast clouds",
+            icon: "04d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623250800,
+        temp: 64.44,
+        feels_like: 63.12,
+        pressure: 1018,
+        humidity: 54,
+        dew_point: 46.63,
+        uvi: 1.46,
+        clouds: 100,
+        visibility: 10000,
+        wind_speed: 2.17,
+        wind_deg: 211,
+        wind_gust: 1.86,
+        weather: [
+          {
+            id: 804,
+            main: "Clouds",
+            description: "overcast clouds",
+            icon: "04d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623254400,
+        temp: 66.87,
+        feels_like: 65.55,
+        pressure: 1018,
+        humidity: 49,
+        dew_point: 46.06,
+        uvi: 3.4,
+        clouds: 95,
+        visibility: 10000,
+        wind_speed: 3.65,
+        wind_deg: 198,
+        wind_gust: 2.35,
+        weather: [
+          {
+            id: 804,
+            main: "Clouds",
+            description: "overcast clouds",
+            icon: "04d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623258000,
+        temp: 68.94,
+        feels_like: 67.6,
+        pressure: 1018,
+        humidity: 44,
+        dew_point: 44.87,
+        uvi: 5.91,
+        clouds: 78,
+        visibility: 10000,
+        wind_speed: 5.91,
+        wind_deg: 207,
+        wind_gust: 3.85,
+        weather: [
+          {
+            id: 803,
+            main: "Clouds",
+            description: "broken clouds",
+            icon: "04d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623261600,
+        temp: 70.14,
+        feels_like: 68.79,
+        pressure: 1018,
+        humidity: 41,
+        dew_point: 43.99,
+        uvi: 8.44,
+        clouds: 65,
+        visibility: 10000,
+        wind_speed: 8.16,
+        wind_deg: 215,
+        wind_gust: 6.26,
+        weather: [
+          {
+            id: 803,
+            main: "Clouds",
+            description: "broken clouds",
+            icon: "04d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623265200,
+        temp: 71.17,
+        feels_like: 69.87,
+        pressure: 1018,
+        humidity: 40,
+        dew_point: 43.52,
+        uvi: 10.41,
+        clouds: 0,
+        visibility: 10000,
+        wind_speed: 8.86,
+        wind_deg: 217,
+        wind_gust: 7.27,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623268800,
+        temp: 71.94,
+        feels_like: 70.63,
+        pressure: 1018,
+        humidity: 38,
+        dew_point: 43.05,
+        uvi: 10.99,
+        clouds: 0,
+        visibility: 10000,
+        wind_speed: 10.54,
+        wind_deg: 218,
+        wind_gust: 9.73,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623272400,
+        temp: 73.2,
+        feels_like: 71.82,
+        pressure: 1017,
+        humidity: 34,
+        dew_point: 41.32,
+        uvi: 10.13,
+        clouds: 0,
+        visibility: 10000,
+        wind_speed: 12.24,
+        wind_deg: 226,
+        wind_gust: 12.53,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623276000,
+        temp: 74.64,
+        feels_like: 73.26,
+        pressure: 1017,
+        humidity: 31,
+        dew_point: 39.69,
+        uvi: 8.13,
+        clouds: 0,
+        visibility: 10000,
+        wind_speed: 12.55,
+        wind_deg: 232,
+        wind_gust: 13.87,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623279600,
+        temp: 75.06,
+        feels_like: 73.62,
+        pressure: 1017,
+        humidity: 29,
+        dew_point: 38.68,
+        uvi: 5.5,
+        clouds: 0,
+        visibility: 10000,
+        wind_speed: 14.74,
+        wind_deg: 243,
+        wind_gust: 15.86,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623283200,
+        temp: 74.34,
+        feels_like: 72.82,
+        pressure: 1016,
+        humidity: 29,
+        dew_point: 38.23,
+        uvi: 3.02,
+        clouds: 0,
+        visibility: 10000,
+        wind_speed: 15.05,
+        wind_deg: 250,
+        wind_gust: 16.31,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623286800,
+        temp: 72.91,
+        feels_like: 71.37,
+        pressure: 1016,
+        humidity: 31,
+        dew_point: 38.35,
+        uvi: 1.23,
+        clouds: 0,
+        visibility: 10000,
+        wind_speed: 14.41,
+        wind_deg: 255,
+        wind_gust: 15.61,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623290400,
+        temp: 70.72,
+        feels_like: 69.04,
+        pressure: 1016,
+        humidity: 33,
+        dew_point: 38.91,
+        uvi: 0.33,
+        clouds: 0,
+        visibility: 10000,
+        wind_speed: 13.24,
+        wind_deg: 258,
+        wind_gust: 14.88,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623294000,
+        temp: 67.42,
+        feels_like: 65.7,
+        pressure: 1017,
+        humidity: 39,
+        dew_point: 40.12,
+        uvi: 0,
+        clouds: 0,
+        visibility: 10000,
+        wind_speed: 12.08,
+        wind_deg: 265,
+        wind_gust: 14.92,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        pop: 0,
+      },
+      {
+        dt: 1623297600,
+        temp: 65.75,
+        feels_like: 63.9,
+        pressure: 1017,
+        humidity: 40,
+        dew_point: 39.92,
+        uvi: 0,
+        clouds: 0,
+        visibility: 10000,
+        wind_speed: 9.13,
+        wind_deg: 275,
+        wind_gust: 11.72,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01n",
+          },
+        ],
+        pop: 0,
+      },
+    ],
+    daily: [
+      {
+        dt: 1623092400,
+        sunrise: 1623069735,
+        sunset: 1623121406,
+        moonrise: 1623063720,
+        moonset: 1623113340,
+        moon_phase: 0.92,
+        temp: {
+          day: 62.24,
+          min: 59.65,
+          max: 66.24,
+          night: 61,
+          eve: 64.71,
+          morn: 60.04,
+        },
+        feels_like: {
+          day: 61.56,
+          night: 60.31,
+          eve: 63.93,
+          morn: 59.27,
+        },
+        pressure: 1014,
+        humidity: 72,
+        dew_point: 52.38,
+        wind_speed: 9.62,
+        wind_deg: 196,
+        wind_gust: 10.16,
+        weather: [
+          {
+            id: 804,
+            main: "Clouds",
+            description: "overcast clouds",
+            icon: "04d",
+          },
+        ],
+        clouds: 100,
+        pop: 0.1,
+        uvi: 8.13,
+      },
+      {
+        dt: 1623178800,
+        sunrise: 1623156128,
+        sunset: 1623207835,
+        moonrise: 1623151980,
+        moonset: 1623203160,
+        moon_phase: 0.95,
+        temp: {
+          day: 68.14,
+          min: 60.31,
+          max: 69.58,
+          night: 64,
+          eve: 69.28,
+          morn: 60.39,
+        },
+        feels_like: {
+          day: 67.33,
+          night: 62.55,
+          eve: 68.31,
+          morn: 59.18,
+        },
+        pressure: 1016,
+        humidity: 57,
+        dew_point: 50.86,
+        wind_speed: 11.14,
+        wind_deg: 220,
+        wind_gust: 10.29,
+        weather: [
+          {
+            id: 801,
+            main: "Clouds",
+            description: "few clouds",
+            icon: "02d",
+          },
+        ],
+        clouds: 18,
+        pop: 0,
+        uvi: 10.83,
+      },
+      {
+        dt: 1623265200,
+        sunrise: 1623242522,
+        sunset: 1623294263,
+        moonrise: 1623240480,
+        moonset: 1623292980,
+        moon_phase: 0.98,
+        temp: {
+          day: 71.17,
+          min: 61.41,
+          max: 75.06,
+          night: 65.17,
+          eve: 72.91,
+          morn: 61.41,
+        },
+        feels_like: {
+          day: 69.87,
+          night: 63.27,
+          eve: 71.37,
+          morn: 60.03,
+        },
+        pressure: 1018,
+        humidity: 40,
+        dew_point: 43.52,
+        wind_speed: 15.05,
+        wind_deg: 250,
+        wind_gust: 16.31,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        clouds: 0,
+        pop: 0,
+        uvi: 10.99,
+      },
+      {
+        dt: 1623351600,
+        sunrise: 1623328918,
+        sunset: 1623380690,
+        moonrise: 1623329220,
+        moonset: 1623382740,
+        moon_phase: 0,
+        temp: {
+          day: 72.32,
+          min: 60.71,
+          max: 73.71,
+          night: 67.24,
+          eve: 73.71,
+          morn: 60.71,
+        },
+        feels_like: {
+          day: 70.43,
+          night: 65.79,
+          eve: 72.32,
+          morn: 58.6,
+        },
+        pressure: 1018,
+        humidity: 25,
+        dew_point: 32.14,
+        wind_speed: 10.51,
+        wind_deg: 226,
+        wind_gust: 11.7,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        clouds: 0,
+        pop: 0,
+        uvi: 10.62,
+      },
+      {
+        dt: 1623438000,
+        sunrise: 1623415315,
+        sunset: 1623467115,
+        moonrise: 1623418320,
+        moonset: 1623472380,
+        moon_phase: 0.04,
+        temp: {
+          day: 75.02,
+          min: 63.19,
+          max: 77.38,
+          night: 68.68,
+          eve: 77.38,
+          morn: 63.19,
+        },
+        feels_like: {
+          day: 73.63,
+          night: 67.6,
+          eve: 76.37,
+          morn: 61.7,
+        },
+        pressure: 1014,
+        humidity: 30,
+        dew_point: 37.53,
+        wind_speed: 10.04,
+        wind_deg: 220,
+        wind_gust: 9.57,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        clouds: 0,
+        pop: 0,
+        uvi: 11.1,
+      },
+      {
+        dt: 1623524400,
+        sunrise: 1623501714,
+        sunset: 1623553540,
+        moonrise: 1623507840,
+        moonset: 1623561720,
+        moon_phase: 0.07,
+        temp: {
+          day: 78.37,
+          min: 65.7,
+          max: 79.25,
+          night: 68.79,
+          eve: 78.94,
+          morn: 65.7,
+        },
+        feels_like: {
+          day: 77.45,
+          night: 68.14,
+          eve: 78.94,
+          morn: 64.54,
+        },
+        pressure: 1011,
+        humidity: 33,
+        dew_point: 42.06,
+        wind_speed: 9.35,
+        wind_deg: 218,
+        wind_gust: 9.91,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        clouds: 0,
+        pop: 0,
+        uvi: 12,
+      },
+      {
+        dt: 1623610800,
+        sunrise: 1623588115,
+        sunset: 1623639963,
+        moonrise: 1623597600,
+        moonset: 1623650820,
+        moon_phase: 0.1,
+        temp: {
+          day: 77.22,
+          min: 66.13,
+          max: 80.33,
+          night: 70.84,
+          eve: 80.33,
+          morn: 66.13,
+        },
+        feels_like: {
+          day: 76.6,
+          night: 70.59,
+          eve: 80.17,
+          morn: 65.5,
+        },
+        pressure: 1013,
+        humidity: 42,
+        dew_point: 50.05,
+        wind_speed: 10.18,
+        wind_deg: 226,
+        wind_gust: 10.47,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        clouds: 0,
+        pop: 0,
+        uvi: 12,
+      },
+      {
+        dt: 1623697200,
+        sunrise: 1623674517,
+        sunset: 1623726385,
+        moonrise: 1623687600,
+        moonset: 1623739620,
+        moon_phase: 0.14,
+        temp: {
+          day: 79.09,
+          min: 67.8,
+          max: 82.36,
+          night: 74.05,
+          eve: 82.36,
+          morn: 67.8,
+        },
+        feels_like: {
+          day: 79.09,
+          night: 73.65,
+          eve: 81.9,
+          morn: 67.53,
+        },
+        pressure: 1012,
+        humidity: 45,
+        dew_point: 53.78,
+        wind_speed: 10.09,
+        wind_deg: 229,
+        wind_gust: 12.03,
+        weather: [
+          {
+            id: 800,
+            main: "Clear",
+            description: "clear sky",
+            icon: "01d",
+          },
+        ],
+        clouds: 1,
+        pop: 0,
+        uvi: 12,
+      },
+    ],
   },
-  [
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 52.52,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 32.33,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 83.85109,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T11:01:22.474Z",
-      },
-      weather_code: {
-        value: "mostly_clear",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 52.7,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 32.12,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 83.85109,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T11:16:22.474Z",
-      },
-      weather_code: {
-        value: "mostly_clear",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 52.87,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 31.91,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 83.85109,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T11:31:22.474Z",
-      },
-      weather_code: {
-        value: "mostly_clear",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 53.04,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 31.7,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 83.85109,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T11:46:22.474Z",
-      },
-      weather_code: {
-        value: "mostly_clear",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 53.18,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 31.4,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 83.85109,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T12:01:22.474Z",
-      },
-      weather_code: {
-        value: "cloudy",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 53.03,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 30.26,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 83.85109,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T12:16:22.474Z",
-      },
-      weather_code: {
-        value: "cloudy",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 52.88,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 29.12,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 83.85109,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T12:31:22.474Z",
-      },
-      weather_code: {
-        value: "cloudy",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 52.72,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 27.97,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 83.85109,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T12:46:22.474Z",
-      },
-      weather_code: {
-        value: "cloudy",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 52.57,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 26.86,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 74.80984,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T13:01:22.474Z",
-      },
-      weather_code: {
-        value: "mostly_cloudy",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 52.38,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 26.06,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 74.80984,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T13:16:22.474Z",
-      },
-      weather_code: {
-        value: "mostly_cloudy",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 52.19,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 25.27,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 74.80984,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T13:31:22.474Z",
-      },
-      weather_code: {
-        value: "mostly_cloudy",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 52,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 24.47,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 74.80984,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T13:46:22.474Z",
-      },
-      weather_code: {
-        value: "mostly_cloudy",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 51.85,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 23.7,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 68.113464,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T14:01:22.474Z",
-      },
-      weather_code: {
-        value: "mostly_clear",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 52.11,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 23.15,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 68.113464,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T14:16:22.474Z",
-      },
-      weather_code: {
-        value: "mostly_clear",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 52.37,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 22.61,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 68.113464,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T14:31:22.474Z",
-      },
-      weather_code: {
-        value: "mostly_clear",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 52.63,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 22.07,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 68.113464,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T14:46:22.474Z",
-      },
-      weather_code: {
-        value: "mostly_clear",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 52.86,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 21.69,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 65.57523,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T15:01:22.474Z",
-      },
-      weather_code: {
-        value: "clear",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 52.77,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 22.91,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 65.57523,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T15:16:22.474Z",
-      },
-      weather_code: {
-        value: "clear",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 52.68,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 24.12,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 65.57523,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T15:31:22.474Z",
-      },
-      weather_code: {
-        value: "clear",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 52.59,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 25.34,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 65.57523,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T15:46:22.474Z",
-      },
-      weather_code: {
-        value: "clear",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 52.65,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 26.41,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 69.21908,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T16:01:22.474Z",
-      },
-      weather_code: {
-        value: "clear",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 54.14,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 26,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 69.21908,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T16:16:22.474Z",
-      },
-      weather_code: {
-        value: "clear",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 55.63,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 25.6,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 69.21908,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T16:31:22.474Z",
-      },
-      weather_code: {
-        value: "clear",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 57.13,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 25.2,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 69.21908,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T16:46:22.474Z",
-      },
-      weather_code: {
-        value: "clear",
-      },
-    },
-    {
-      lat: 34.07,
-      lon: -118.44,
-      feels_like: {
-        value: 58.61,
-        units: "F",
-      },
-      precipitation: {
-        value: 0,
-        units: "in/hr",
-      },
-      humidity: {
-        value: 24.73,
-        units: "%",
-      },
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      epa_aqi: {
-        value: 80.49359,
-      },
-      epa_primary_pollutant: {
-        value: "pm25",
-      },
-      epa_health_concern: {
-        value: "Moderate",
-      },
-      observation_time: {
-        value: "2021-01-11T17:01:22.474Z",
-      },
-      weather_code: {
-        value: "clear",
-      },
-    },
-  ],
-  [
-    {
-      precipitation: [
-        {
-          observation_time: "2021-01-10T23:00:00Z",
-          max: {
-            value: 0,
-            units: "in/hr",
-          },
-        },
-      ],
-      feels_like: [
-        {
-          observation_time: "2021-01-11T08:00:00Z",
-          min: {
-            value: 49.8,
-            units: "F",
-          },
-        },
-        {
-          observation_time: "2021-01-11T21:00:00Z",
-          max: {
-            value: 72.02,
-            units: "F",
-          },
-        },
-      ],
-      humidity: [
-        {
-          observation_time: "2021-01-11T20:00:00Z",
-          min: {
-            value: 16.38,
-            units: "%",
-          },
-        },
-        {
-          observation_time: "2021-01-11T02:00:00Z",
-          max: {
-            value: 51.43,
-            units: "%",
-          },
-        },
-      ],
-      sunrise: {
-        value: "2021-01-11T15:00:05.057Z",
-      },
-      sunset: {
-        value: "2021-01-12T01:04:21.208Z",
-      },
-      weather_code: {
-        value: "mostly_cloudy",
-      },
-      observation_time: {
-        value: "2021-01-10",
-      },
-      lat: 34.07,
-      lon: -118.44,
-    },
-    {
-      precipitation: [
-        {
-          observation_time: "2021-01-11T23:00:00Z",
-          max: {
-            value: 0,
-            units: "in/hr",
-          },
-        },
-      ],
-      feels_like: [
-        {
-          observation_time: "2021-01-12T15:00:00Z",
-          min: {
-            value: 44.71,
-            units: "F",
-          },
-        },
-        {
-          observation_time: "2021-01-12T21:00:00Z",
-          max: {
-            value: 69.62,
-            units: "F",
-          },
-        },
-      ],
-      humidity: [
-        {
-          observation_time: "2021-01-12T20:00:00Z",
-          min: {
-            value: 19.24,
-            units: "%",
-          },
-        },
-        {
-          observation_time: "2021-01-12T02:00:00Z",
-          max: {
-            value: 55.9,
-            units: "%",
-          },
-        },
-      ],
-      sunrise: {
-        value: "2021-01-12T14:59:55.707Z",
-      },
-      sunset: {
-        value: "2021-01-13T01:05:15.450Z",
-      },
-      weather_code: {
-        value: "cloudy",
-      },
-      observation_time: {
-        value: "2021-01-11",
-      },
-      lat: 34.07,
-      lon: -118.44,
-    },
-    {
-      precipitation: [
-        {
-          observation_time: "2021-01-12T23:00:00Z",
-          max: {
-            value: 0,
-            units: "in/hr",
-          },
-        },
-      ],
-      feels_like: [
-        {
-          observation_time: "2021-01-13T14:00:00Z",
-          min: {
-            value: 49.87,
-            units: "F",
-          },
-        },
-        {
-          observation_time: "2021-01-13T21:00:00Z",
-          max: {
-            value: 76.83,
-            units: "F",
-          },
-        },
-      ],
-      humidity: [
-        {
-          observation_time: "2021-01-13T20:00:00Z",
-          min: {
-            value: 11.86,
-            units: "%",
-          },
-        },
-        {
-          observation_time: "2021-01-13T02:00:00Z",
-          max: {
-            value: 55.9,
-            units: "%",
-          },
-        },
-      ],
-      sunrise: {
-        value: "2021-01-13T14:59:44.485Z",
-      },
-      sunset: {
-        value: "2021-01-14T01:06:10.290Z",
-      },
-      weather_code: {
-        value: "cloudy",
-      },
-      observation_time: {
-        value: "2021-01-12",
-      },
-      lat: 34.07,
-      lon: -118.44,
-    },
-    {
-      precipitation: [
-        {
-          observation_time: "2021-01-13T23:00:00Z",
-          max: {
-            value: 0,
-            units: "in/hr",
-          },
-        },
-      ],
-      feels_like: [
-        {
-          observation_time: "2021-01-14T06:00:00Z",
-          min: {
-            value: 60.35,
-            units: "F",
-          },
-        },
-        {
-          observation_time: "2021-01-14T22:00:00Z",
-          max: {
-            value: 74.7,
-            units: "F",
-          },
-        },
-      ],
-      humidity: [
-        {
-          observation_time: "2021-01-13T23:00:00Z",
-          min: {
-            value: 18.68,
-            units: "%",
-          },
-        },
-        {
-          observation_time: "2021-01-14T16:00:00Z",
-          max: {
-            value: 35.17,
-            units: "%",
-          },
-        },
-      ],
-      sunrise: {
-        value: "2021-01-14T14:59:31.397Z",
-      },
-      sunset: {
-        value: "2021-01-15T01:07:05.682Z",
-      },
-      weather_code: {
-        value: "cloudy",
-      },
-      observation_time: {
-        value: "2021-01-13",
-      },
-      lat: 34.07,
-      lon: -118.44,
-    },
-    {
-      precipitation: [
-        {
-          observation_time: "2021-01-14T23:00:00Z",
-          max: {
-            value: 0,
-            units: "in/hr",
-          },
-        },
-      ],
-      feels_like: [
-        {
-          observation_time: "2021-01-15T14:00:00Z",
-          min: {
-            value: 69.03,
-            units: "F",
-          },
-        },
-        {
-          observation_time: "2021-01-15T21:00:00Z",
-          max: {
-            value: 78.1,
-            units: "F",
-          },
-        },
-      ],
-      humidity: [
-        {
-          observation_time: "2021-01-15T22:00:00Z",
-          min: {
-            value: 21.54,
-            units: "%",
-          },
-        },
-        {
-          observation_time: "2021-01-15T11:00:00Z",
-          max: {
-            value: 37.62,
-            units: "%",
-          },
-        },
-      ],
-      sunrise: {
-        value: "2021-01-15T14:59:16.452Z",
-      },
-      sunset: {
-        value: "2021-01-16T01:08:01.583Z",
-      },
-      weather_code: {
-        value: "clear",
-      },
-      observation_time: {
-        value: "2021-01-14",
-      },
-      lat: 34.07,
-      lon: -118.44,
-    },
-    {
-      precipitation: [
-        {
-          observation_time: "2021-01-15T23:00:00Z",
-          max: {
-            value: 0,
-            units: "in/hr",
-          },
-        },
-      ],
-      feels_like: [
-        {
-          observation_time: "2021-01-16T15:00:00Z",
-          min: {
-            value: 67.08,
-            units: "F",
-          },
-        },
-        {
-          observation_time: "2021-01-15T23:00:00Z",
-          max: {
-            value: 77.2,
-            units: "F",
-          },
-        },
-      ],
-      humidity: [
-        {
-          observation_time: "2021-01-16T21:00:00Z",
-          min: {
-            value: 22.16,
-            units: "%",
-          },
-        },
-        {
-          observation_time: "2021-01-16T15:00:00Z",
-          max: {
-            value: 35.92,
-            units: "%",
-          },
-        },
-      ],
-      sunrise: {
-        value: "2021-01-16T14:58:59.658Z",
-      },
-      sunset: {
-        value: "2021-01-17T01:08:57.949Z",
-      },
-      weather_code: {
-        value: "partly_cloudy",
-      },
-      observation_time: {
-        value: "2021-01-15",
-      },
-      lat: 34.07,
-      lon: -118.44,
-    },
-    {
-      precipitation: [
-        {
-          observation_time: "2021-01-17T00:00:00Z",
-          max: {
-            value: 0,
-            units: "in/hr",
-          },
-        },
-      ],
-      feels_like: [
-        {
-          observation_time: "2021-01-17T15:00:00Z",
-          min: {
-            value: 63.62,
-            units: "F",
-          },
-        },
-        {
-          observation_time: "2021-01-17T00:00:00Z",
-          max: {
-            value: 76.78,
-            units: "F",
-          },
-        },
-      ],
-      humidity: [
-        {
-          observation_time: "2021-01-17T21:00:00Z",
-          min: {
-            value: 17.96,
-            units: "%",
-          },
-        },
-        {
-          observation_time: "2021-01-17T09:00:00Z",
-          max: {
-            value: 30.62,
-            units: "%",
-          },
-        },
-      ],
-      sunrise: {
-        value: "2021-01-17T14:58:41.026Z",
-      },
-      sunset: {
-        value: "2021-01-18T01:09:54.733Z",
-      },
-      weather_code: {
-        value: "clear",
-      },
-      observation_time: {
-        value: "2021-01-16",
-      },
-      lat: 34.07,
-      lon: -118.44,
-    },
-    {
-      precipitation: [
-        {
-          observation_time: "2021-01-18T00:00:00Z",
-          max: {
-            value: 0,
-            units: "in/hr",
-          },
-        },
-      ],
-      feels_like: [
-        {
-          observation_time: "2021-01-18T15:00:00Z",
-          min: {
-            value: 64.06,
-            units: "F",
-          },
-        },
-        {
-          observation_time: "2021-01-18T21:00:00Z",
-          max: {
-            value: 75.71,
-            units: "F",
-          },
-        },
-      ],
-      humidity: [
-        {
-          observation_time: "2021-01-18T21:00:00Z",
-          min: {
-            value: 19.16,
-            units: "%",
-          },
-        },
-        {
-          observation_time: "2021-01-18T09:00:00Z",
-          max: {
-            value: 31.52,
-            units: "%",
-          },
-        },
-      ],
-      sunrise: {
-        value: "2021-01-18T14:58:20.568Z",
-      },
-      sunset: {
-        value: "2021-01-19T01:10:51.895Z",
-      },
-      weather_code: {
-        value: "clear",
-      },
-      observation_time: {
-        value: "2021-01-17",
-      },
-      lat: 34.07,
-      lon: -118.44,
-    },
-    {
-      precipitation: [
-        {
-          observation_time: "2021-01-19T00:00:00Z",
-          max: {
-            value: 0,
-            units: "in/hr",
-          },
-        },
-      ],
-      feels_like: [
-        {
-          observation_time: "2021-01-19T15:00:00Z",
-          min: {
-            value: 67.76,
-            units: "F",
-          },
-        },
-        {
-          observation_time: "2021-01-19T21:00:00Z",
-          max: {
-            value: 76.58,
-            units: "F",
-          },
-        },
-      ],
-      humidity: [
-        {
-          observation_time: "2021-01-19T21:00:00Z",
-          min: {
-            value: 19.62,
-            units: "%",
-          },
-        },
-        {
-          observation_time: "2021-01-19T06:00:00Z",
-          max: {
-            value: 26.78,
-            units: "%",
-          },
-        },
-      ],
-      sunrise: {
-        value: "2021-01-19T14:57:58.298Z",
-      },
-      sunset: {
-        value: "2021-01-20T01:11:49.393Z",
-      },
-      weather_code: {
-        value: "clear",
-      },
-      observation_time: {
-        value: "2021-01-18",
-      },
-      lat: 34.07,
-      lon: -118.44,
-    },
-    {
-      precipitation: [
-        {
-          observation_time: "2021-01-20T00:00:00Z",
-          max: {
-            value: 0,
-            units: "in/hr",
-          },
-        },
-      ],
-      feels_like: [
-        {
-          observation_time: "2021-01-20T15:00:00Z",
-          min: {
-            value: 67.52,
-            units: "F",
-          },
-        },
-        {
-          observation_time: "2021-01-20T00:00:00Z",
-          max: {
-            value: 76.26,
-            units: "F",
-          },
-        },
-      ],
-      humidity: [
-        {
-          observation_time: "2021-01-20T21:00:00Z",
-          min: {
-            value: 19.68,
-            units: "%",
-          },
-        },
-        {
-          observation_time: "2021-01-20T15:00:00Z",
-          max: {
-            value: 29.52,
-            units: "%",
-          },
-        },
-      ],
-      sunrise: {
-        value: "2021-01-20T14:57:34.228Z",
-      },
-      sunset: {
-        value: "2021-01-21T01:12:47.185Z",
-      },
-      weather_code: {
-        value: "mostly_clear",
-      },
-      observation_time: {
-        value: "2021-01-19",
-      },
-      lat: 34.07,
-      lon: -118.44,
-    },
-    {
-      precipitation: [
-        {
-          observation_time: "2021-01-21T00:00:00Z",
-          max: {
-            value: 0,
-            units: "in/hr",
-          },
-        },
-      ],
-      feels_like: [
-        {
-          observation_time: "2021-01-21T15:00:00Z",
-          min: {
-            value: 56.48,
-            units: "F",
-          },
-        },
-        {
-          observation_time: "2021-01-21T00:00:00Z",
-          max: {
-            value: 69.43,
-            units: "F",
-          },
-        },
-      ],
-      humidity: [
-        {
-          observation_time: "2021-01-21T00:00:00Z",
-          min: {
-            value: 26.44,
-            units: "%",
-          },
-        },
-        {
-          observation_time: "2021-01-21T15:00:00Z",
-          max: {
-            value: 57.5,
-            units: "%",
-          },
-        },
-      ],
-      sunrise: {
-        value: "2021-01-21T14:57:08.377Z",
-      },
-      sunset: {
-        value: "2021-01-22T01:13:45.232Z",
-      },
-      weather_code: {
-        value: "clear",
-      },
-      observation_time: {
-        value: "2021-01-20",
-      },
-      lat: 34.07,
-      lon: -118.44,
-    },
-    {
-      precipitation: [
-        {
-          observation_time: "2021-01-22T00:00:00Z",
-          max: {
-            value: 0,
-            units: "in/hr",
-          },
-        },
-      ],
-      feels_like: [
-        {
-          observation_time: "2021-01-22T15:00:00Z",
-          min: {
-            value: 49.82,
-            units: "F",
-          },
-        },
-        {
-          observation_time: "2021-01-22T00:00:00Z",
-          max: {
-            value: 59.46,
-            units: "F",
-          },
-        },
-      ],
-      humidity: [
-        {
-          observation_time: "2021-01-22T18:00:00Z",
-          min: {
-            value: 17.04,
-            units: "%",
-          },
-        },
-        {
-          observation_time: "2021-01-22T00:00:00Z",
-          max: {
-            value: 53,
-            units: "%",
-          },
-        },
-      ],
-      sunrise: {
-        value: "2021-01-22T14:56:40.761Z",
-      },
-      sunset: {
-        value: "2021-01-23T01:14:43.494Z",
-      },
-      weather_code: {
-        value: "cloudy",
-      },
-      observation_time: {
-        value: "2021-01-21",
-      },
-      lat: 34.07,
-      lon: -118.44,
-    },
-    {
-      precipitation: [
-        {
-          observation_time: "2021-01-23T00:00:00Z",
-          max: {
-            value: 0,
-            units: "in/hr",
-          },
-        },
-      ],
-      feels_like: [
-        {
-          observation_time: "2021-01-23T12:00:00Z",
-          min: {
-            value: 53.85,
-            units: "F",
-          },
-        },
-        {
-          observation_time: "2021-01-23T21:00:00Z",
-          max: {
-            value: 62.28,
-            units: "F",
-          },
-        },
-      ],
-      humidity: [
-        {
-          observation_time: "2021-01-23T21:00:00Z",
-          min: {
-            value: 17.2,
-            units: "%",
-          },
-        },
-        {
-          observation_time: "2021-01-23T18:00:00Z",
-          max: {
-            value: 21.14,
-            units: "%",
-          },
-        },
-      ],
-      sunrise: {
-        value: "2021-01-23T14:56:11.397Z",
-      },
-      sunset: {
-        value: "2021-01-24T01:15:41.934Z",
-      },
-      weather_code: {
-        value: "cloudy",
-      },
-      observation_time: {
-        value: "2021-01-22",
-      },
-      lat: 34.07,
-      lon: -118.44,
-    },
-    {
-      precipitation: [
-        {
-          observation_time: "2021-01-24T00:00:00Z",
-          max: {
-            value: 0,
-            units: "in/hr",
-          },
-        },
-      ],
-      feels_like: [
-        {
-          observation_time: "2021-01-24T15:00:00Z",
-          min: {
-            value: 55.91,
-            units: "F",
-          },
-        },
-        {
-          observation_time: "2021-01-24T21:00:00Z",
-          max: {
-            value: 61.71,
-            units: "F",
-          },
-        },
-      ],
-      humidity: [
-        {
-          observation_time: "2021-01-24T21:00:00Z",
-          min: {
-            value: 17.94,
-            units: "%",
-          },
-        },
-        {
-          observation_time: "2021-01-24T03:00:00Z",
-          max: {
-            value: 25.98,
-            units: "%",
-          },
-        },
-      ],
-      sunrise: {
-        value: "2021-01-24T14:55:40.306Z",
-      },
-      sunset: {
-        value: "2021-01-25T01:16:40.515Z",
-      },
-      weather_code: {
-        value: "cloudy",
-      },
-      observation_time: {
-        value: "2021-01-23",
-      },
-      lat: 34.07,
-      lon: -118.44,
-    },
-    {
-      precipitation: [
-        {
-          observation_time: "2021-01-25T00:00:00Z",
-          max: {
-            value: 0,
-            units: "in/hr",
-          },
-        },
-      ],
-      feels_like: [
-        {
-          observation_time: "2021-01-25T15:00:00Z",
-          min: {
-            value: 48.01,
-            units: "F",
-          },
-        },
-        {
-          observation_time: "2021-01-25T00:00:00Z",
-          max: {
-            value: 59.41,
-            units: "F",
-          },
-        },
-      ],
-      humidity: [
-        {
-          observation_time: "2021-01-25T00:00:00Z",
-          min: {
-            value: 24.08,
-            units: "%",
-          },
-        },
-        {
-          observation_time: "2021-01-25T15:00:00Z",
-          max: {
-            value: 75.56,
-            units: "%",
-          },
-        },
-      ],
-      sunrise: {
-        value: "2021-01-25T14:55:07.506Z",
-      },
-      sunset: {
-        value: "2021-01-26T01:17:39.203Z",
-      },
-      weather_code: {
-        value: "cloudy",
-      },
-      observation_time: {
-        value: "2021-01-24",
-      },
-      lat: 34.07,
-      lon: -118.44,
-    },
-  ],
-];
+  aqi: {
+    list: [
+      {
+        main: {
+          aqi: 1,
+        },
+        components: {
+          co: 257.02,
+          no: 0,
+          no2: 16.97,
+          o3: 50.78,
+          so2: 1.61,
+          pm2_5: 5.73,
+          pm10: 11.95,
+          nh3: 0.85,
+        },
+        dt: 1623128400,
+      },
+    ],
+  },
+};
 
-export const fakeFetch = async (n: number): Promise<any[]> =>
-  new Promise((resolve) =>
-    window.setTimeout(() => resolve(data.slice(0, n)), 500)
-  );
+export const fakeFetch = async (): Promise<any> =>
+  new Promise((resolve) => window.setTimeout(() => resolve(data), 500));

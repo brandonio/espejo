@@ -1,15 +1,18 @@
 /* Variables */
 :root {
-  --light-text: #777;
+  --light-text: white;
+  --lighter-text: #ddd;
 }
 
 /* Document */
 body {
-  margin: 0;
+  background-color: black;
   font-family: Poppins;
+  margin: 0;
 }
 
 span {
+  color: white;
   line-height: 1;
 }
 
@@ -20,18 +23,18 @@ span {
 
 /* Main Container */
 .smart-mirror-container {
-  position: absolute;
-  height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
+  height: 100%;
   justify-content: space-around;
+  position: absolute;
+  width: 100%;
 }
 
 /* Error Messages */
 .message {
-  font-size: 100px;
   align-self: center;
+  font-size: 100px;
 }
 
 .message.error {
@@ -41,46 +44,47 @@ span {
 /* NumDayForecast (ndf) */
 .ndf-container {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-evenly;
 }
 
 /* OneDayForecast (odf) */
 .odf-container {
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  padding: 12px 15px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.19);
   height: 100%;
   justify-content: space-evenly;
+  padding: 12px 15px;
 }
 
 .odf-day-and-date {
   display: flex;
-  width: 100%;
-  /* justify-content: space-evenly; */
   justify-content: center;
 }
 
 .odf-day {
-  font-size: 40px;
   color: var(--light-text);
+  font-size: 40px;
 }
 
 .odf-day.Sat,
 .odf-day.Sun {
-  /* text-decoration: underline; */
+  box-shadow: 0 -4px black;
 }
 
 .odf-date {
   font-size: 40px;
 }
 
+.odf-date.Sat,
+.odf-date.Sun {
+  box-shadow: 0 -4px var(--light-text);
+}
+
 .odf-min-icon-max {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .odf-min-icon-max > .weather-icon {
@@ -89,99 +93,80 @@ span {
 
 /* DateAndTime and Weather */
 .current-info-container {
+  align-items: flex-end;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
-  width: 100%;
 }
 
 /* DateAndTime (dat) */
 .dat-container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 100%;
-  justify-content: space-evenly;
 }
 
 .dat-date-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
   font-size: 80px;
-  align-items: flex-start;
 }
 
-.dat-day {
+.dat-day,
+.dat-month {
   color: var(--light-text);
 }
 
 .dat-time-container {
-  display: flex; /* why is this needed? */
-  font-size: 190px;
+  display: flex;
+  font-size: 180px;
 }
 
 .dat-minutes {
   color: var(--light-text);
 }
 
-/* WeatherAndSun (was) */
-.was-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.dat-seconds {
+  color: var(--lighter-text);
+  width: 1.2em;
 }
 
-/* new */
+/* WeatherAndSun (was) */
+.was-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
 /* SunriseAndSunset (sas) */
 .sas-container {
   display: flex;
-  flex-direction: column;
-}
-/* new */
-
-.sun-container {
-  display: flex;
   flex-direction: row;
-  align-items: center;
-}
-
-.sun-icon {
-  height: 40px;
-}
-
-.sun-icon.sunset {
-  transform: rotate(180deg);
-}
-
-.sun-time {
+  justify-content: space-between;
+  width: 100%;
   font-size: 35px;
 }
 
-.sun-am-pm {
-  color: var(--light-text);
-}
-
-/* SixHourForecast (shf) */
-.shf-container {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-
-/* ThirtyMinuteForecast (tmf) */
-.tmf-container {
-  display: flex;
-  height: 100%;
-  justify-content: space-around;
-  flex-direction: column;
+/* TimeAndIcon (tai) */
+.tai-container {
   align-items: center;
-  padding: 10px 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.19);
+  display: flex;
 }
 
-.tmf-time {
-  font-size: 20px;
+/* NumHourForecast (nhf) */
+.nhf-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* OneHourForecast (ohf) */
+.ohf-container {
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 25px;
+}
+
+.ohf-time {
+  font-size: 28px;
 }

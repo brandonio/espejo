@@ -1,34 +1,27 @@
 import React, { FC, useEffect, useState } from "react";
-
-const extractValues = (t: number): string[] => {
-  const dateString = new Date(t).toString();
-  return [
-    dateString.slice(0, 3),
-    dateString.slice(8, 10),
-    dateString.slice(16, 18),
-    dateString.slice(19, 21),
-  ];
-};
+import { extractValues } from "../utils";
 
 export const DateAndTime: FC<any> = () => {
   const [time, setTime] = useState<number>(Date.now());
 
   useEffect(() => {
-    const interval = setInterval(() => setTime((t) => t + 1_000), 1_000);
+    const interval = setInterval(() => setTime(Date.now()), 1_000);
     return () => clearInterval(interval);
   }, []);
 
-  const [day, date, hours, minutes] = extractValues(time);
+  const { day, month, date, hours, minutes, seconds } = extractValues(time);
 
   return (
     <div className="dat-container">
       <div className="dat-date-container">
         <span className="dat-day">{day}</span>
         <span className="dat-date">{date}</span>
+        <span className="dat-month">{month}</span>
       </div>
       <div className="dat-time-container">
         <span className="dat-hours">{hours}</span>
         <span className="dat-minutes">{minutes}</span>
+        <span className="dat-seconds">{seconds}</span>
       </div>
     </div>
   );
