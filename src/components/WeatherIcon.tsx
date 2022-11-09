@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 
 const baseUrl =
-  "https://raw.githubusercontent.com/Tomorrow-IO-API/tomorrow-weather-codes/master/color";
+  "https://raw.githubusercontent.com/Tomorrow-IO-API/tomorrow-weather-codes/master/V1_icons/color";
 
 const iconMap: any = {
   "01d": "clear_day",
